@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Mass Index(BMI Calculator)</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="h-[100vh] flex justify-center items-center bg-green-200">
+        <div class="bg-gray-200 rounded-lg p-4 w-[50%] ">
+            <h1 class="text-center font-medium text-4xl mb-8">Body Mass Index(BMI) Calculator</h1>
+            <div class="text-xl mx-2 my-4">
+                <p>Your height(cm):</p>
+                <input type="number" placeholder="Your Height" value="180" class="input mx-2 my-2 w-[90%] p-2 rounded" id="height">
+            </div>
+            <div class="text-xl mx-2 my-4">
+                <p>Your weight(kg):</p>
+                <input type="number" placeholder="Your Weight" value="80" class="input mx-2 my-2 w-[90%] p-2 rounded" id="weight">
+            </div>
+            <button class="btn text-xl my-4 text-center bg-red-200 hover:bg-red-400 w-[90%] mx-2 rounded p-2" id="btn">Compute BMI</button>
+            <input disabled-type="text" class="input mx-2 my-2 w-[90%] p-2 rounded" id="bmi-result">
+            <h1 class="info-text text-xl mx-2 my-4">Weight Condition:
+            <span id="weight-condition" class="mx-4 text-lg"></span></h1>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
